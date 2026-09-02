@@ -17,18 +17,18 @@
     "purpose": "install_configure_and_use_suwen",
     "repository_role": "distribution_only",
     "schema_version": "suwen-public-artifact.v1",
-    "version": "2026.9.1.post18"
+    "version": "2026.9.1.post19"
   },
   "assets": {
-    "ARTIFACT.json": "a080d9d270754f7ae5f7b755a2bb3490514eae4ff33e58145e9a032845f76acf",
+    "ARTIFACT.json": "3746696938aaab3ba82cc9308a24637594aec55386227a03d1d04d8c24e1a7b0",
     "README.md": "24a007a2bb619098bb872ef0f37685c398f77b728719d3ff35cd1f35d4b981c6",
-    "suwen_agent-2026.9.1.post18-py3-none-any.whl": "3bb03fb818683bebd495d9a410f3ac1c1a2a7d40f46e05f7e3e58d584c7f748a",
-    "suwen_agent-2026.9.1.post18.tar.gz": "7e48d2abddb7de8fcdced4648867bc3207b3021666a941557017534952114520",
+    "suwen_agent-2026.9.1.post19-py3-none-any.whl": "b1e05f703c341627144a486432b4005f93b94f924065e8863ac981223f145089",
+    "suwen_agent-2026.9.1.post19.tar.gz": "ad432db7eeeff85e2760b105a536ee896844a02ce31a0d58d935b0e48e120ec3",
     "web/suwen-agent-hero.png": "981be18b3bc1ae4af345c7dafd2ed5c8d67065ebffba341fb8204675119f7fc7",
     "web/suwen-models.png": "8ca645aae6d3934562f45e59c8d6869ec1f0c21e490acaa24ca85c9593f6248e"
   },
-  "bundle": "suwen-agent-2026.9.1.post18.zip",
-  "bundle_sha256": "bc80b3d0d84c2143e435206182e3bb43385c16fe7509e895b90e5cfba4c2d02e",
+  "bundle": "suwen-agent-2026.9.1.post19.zip",
+  "bundle_sha256": "d1622a6bf2de7da1d04d9e5e60c20f4cdea425fa03caf6254dc58e26c0bd3ddb",
   "gate": {
     "archive_boundaries": "passed",
     "archive_file_count": 169,
@@ -41,6 +41,6 @@
   },
   "package": "suwen-agent",
   "schema_version": "suwen-github-distribution.v1",
-  "tag": "v2026.9.1.post18",
-  "version": "2026.9.1.post18"
+  "tag": "v2026.9.1.post19",
+  "version": "2026.9.1.post19"
 }
