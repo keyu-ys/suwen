@@ -1,0 +1,20 @@
+{
+  "artifact_kind": "installable_product_distribution",
+  "audience": "end_user",
+  "excludes": [
+    "engineering_repository",
+    "maintainer_agent_material",
+    "production_state",
+    "business_material"
+  ],
+  "includes": [
+    "runtime_installation_artifacts",
+    "user_documentation",
+    "product_images"
+  ],
+  "package": "suwen-agent",
+  "purpose": "install_configure_and_use_suwen",
+  "repository_role": "distribution_only",
+  "schema_version": "suwen-public-artifact.v1",
+  "version": "2026.9.1.post18"
+}

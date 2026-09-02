@@ -10,6 +10,10 @@
 使用者可以通过飞书等频道或 HTTP API 提问；管理员通过中文管理台配置模型、连接器和智能体，
 查看每次诊断使用了哪些数据、经过了哪些步骤，以及最终答复基于什么证据。
 
+**[下载最新版 Suwen](https://github.com/keyu-ys/suwen/releases/latest)** — 在发行页面的
+“附件（Assets）”中下载 `suwen-agent-<version>.zip` 完整包；页面也同时提供可单独安装的 wheel、
+可审阅的源码包和 `SHA256SUMS` 校验文件。
+
 ## 它和通用 Agent 有什么不同
 
 - **领域知识装配**：每个 Agent 都可以绑定自己的领域专家、提示词和工具，不依赖一套通用回答方式。
@@ -33,16 +37,25 @@
 
 ## 安装并启动
 
-在解压后的 Suwen 发行目录中执行：
+最简单的方式，是把下面这段话直接交给能够操作终端的 AI Coding Agent：
+
+```text
+请从 https://github.com/keyu-ys/suwen/releases/latest 下载最新版 Suwen 完整包，核对 SHA256SUMS，
+使用 Python 3.11 或更高版本创建独立虚拟环境并安装其中的 wheel；然后完成 Suwen 本地安装、生成访问令牌，
+并仅监听 127.0.0.1:18090 启动服务。不要修改系统 Python，不要读取或上传无关文件，也不要接入或发送
+任何外部消息；需要模型 API Key 或额外系统权限时先询问我。完成后告诉我管理台地址和 admin_token 文件位置。
+```
+
+如果希望手动安装，打开 [最新发行页面](https://github.com/keyu-ys/suwen/releases/latest)，展开
+“附件（Assets）”，下载 `suwen-agent-<version>.zip` 并解压，然后在文件夹中执行：
 
 ```bash
 shasum -a 256 -c SHA256SUMS
 
 python3 -m venv .installer
-. .installer/bin/activate
-python -m pip install ./suwen_agent-*-py3-none-any.whl
+.installer/bin/python -m pip install ./suwen_agent-*-py3-none-any.whl
 
-suwen install --source ./suwen_agent-*-py3-none-any.whl
+.installer/bin/suwen install --source ./suwen_agent-*-py3-none-any.whl
 ~/.suwen/bin/suwen provision-access-tokens
 ~/.suwen/bin/suwen serve --host 127.0.0.1 --port 18090
 ```

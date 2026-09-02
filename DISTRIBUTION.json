@@ -1,15 +1,46 @@
 {
+  "artifact": {
+    "artifact_kind": "installable_product_distribution",
+    "audience": "end_user",
+    "excludes": [
+      "engineering_repository",
+      "maintainer_agent_material",
+      "production_state",
+      "business_material"
+    ],
+    "includes": [
+      "runtime_installation_artifacts",
+      "user_documentation",
+      "product_images"
+    ],
+    "package": "suwen-agent",
+    "purpose": "install_configure_and_use_suwen",
+    "repository_role": "distribution_only",
+    "schema_version": "suwen-public-artifact.v1",
+    "version": "2026.9.1.post18"
+  },
   "assets": {
-    "README.md": "1d4cae0b05f904d51eddc490ae5e28b8880f5bdcd69a71999b0dfd36437abd8c",
-    "suwen_agent-2026.9.1.post17-py3-none-any.whl": "7127b938c4477d75f35e260f0fb55f572aba28a6371876fc245a63596bfdc710",
-    "suwen_agent-2026.9.1.post17.tar.gz": "b07676cbc1c4b965a5f26a53d70e264b68d4130b4bef2948b56c0b4f499baa63",
+    "ARTIFACT.json": "a080d9d270754f7ae5f7b755a2bb3490514eae4ff33e58145e9a032845f76acf",
+    "README.md": "24a007a2bb619098bb872ef0f37685c398f77b728719d3ff35cd1f35d4b981c6",
+    "suwen_agent-2026.9.1.post18-py3-none-any.whl": "3bb03fb818683bebd495d9a410f3ac1c1a2a7d40f46e05f7e3e58d584c7f748a",
+    "suwen_agent-2026.9.1.post18.tar.gz": "7e48d2abddb7de8fcdced4648867bc3207b3021666a941557017534952114520",
     "web/suwen-agent-hero.png": "981be18b3bc1ae4af345c7dafd2ed5c8d67065ebffba341fb8204675119f7fc7",
     "web/suwen-models.png": "8ca645aae6d3934562f45e59c8d6869ec1f0c21e490acaa24ca85c9593f6248e"
   },
-  "bundle": "suwen-agent-2026.9.1.post17.zip",
-  "bundle_sha256": "d5286b5455c056e43aa0f4de692046295d97bfd1cd2265a7d8e55206e1447703",
+  "bundle": "suwen-agent-2026.9.1.post18.zip",
+  "bundle_sha256": "bc80b3d0d84c2143e435206182e3bb43385c16fe7509e895b90e5cfba4c2d02e",
+  "gate": {
+    "archive_boundaries": "passed",
+    "archive_file_count": 169,
+    "artifact_identity": "passed",
+    "bundle_file_count": 7,
+    "data_leakage": "passed",
+    "schema_version": "suwen-distribution-gate.v1",
+    "status": "passed",
+    "user_facing_readme": "passed"
+  },
   "package": "suwen-agent",
   "schema_version": "suwen-github-distribution.v1",
-  "tag": "v2026.9.1.post17",
-  "version": "2026.9.1.post17"
+  "tag": "v2026.9.1.post18",
+  "version": "2026.9.1.post18"
 }
